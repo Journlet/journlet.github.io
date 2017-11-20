@@ -13,6 +13,8 @@
     </head>
     <body>
 
+        <div id="fb-root"></div>
+
         <div class="container-fluid container-header">
 
             <div class="caption p-5 bg-dark text-white">
@@ -155,15 +157,18 @@
 
                 <div class="row">
 
-                    <div class="col align-self-center">
+                    <div class="col-3 text-center">
 
-                        <h2>Like us? Share us?</h2>
+                        <div class="fb-like mb-3" data-href="https://www.facebook.com/journlet" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+                        <p class="mb-0">
+                            <a href="https://www.pinterest.com/pin/create/button/" data-pin-url="https://www.journlet.com" data-pin-do="buttonBookmark" data-pin-tall="true"></a>
+                        </p>
 
                     </div>
 
-                    <div class="col-md-5 text-center">
+                    <div class="col align-self-center">
 
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjournlet%2F&tabs&width=340&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=450838601969392" width="340" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" class=""></iframe>
+                        <h2>Like us? Share us? Save us?</h2>
 
                     </div>
 
@@ -183,6 +188,16 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="//assets.pinterest.com/js/pinit.js" async defer></script>
+        <script>
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11&appId=450838601969392';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
 
     </body>
 </html>
